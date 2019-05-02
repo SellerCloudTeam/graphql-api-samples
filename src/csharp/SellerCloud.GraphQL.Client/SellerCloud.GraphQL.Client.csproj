@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageProjectUrl>https://github.com/SellerCloudTeam/graphql-api-samples</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SellerCloudTeam/graphql-api-samples</RepositoryUrl>
+    <Copyright>(c) 2019 SellerCloud</Copyright>
+    <Description>SellerCloud GraphQL API (.NET)</Description>
+    <Authors>SellerCloud</Authors>
+    <Product>SellerCloud GraphQL API Client</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SellerCloud.Net.Http" Version="1.0.0.5" />
+  </ItemGroup>
+
+</Project>

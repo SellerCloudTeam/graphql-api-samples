@@ -37,3 +37,4 @@ bin/
 obj/
 
 packages/
+/src/csharp/SellerCloud.GraphQL.Client.sln.DotSettings.user

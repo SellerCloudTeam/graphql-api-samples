@@ -1,0 +1,1 @@
+export { GlobalSearchNavigation } from "./GlobalSearchNavigation";

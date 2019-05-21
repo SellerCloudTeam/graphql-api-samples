@@ -41,7 +41,7 @@ namespace Sample.DotNetCore
 
         static async Task TypedQueryExampleViewer(IGraphQLApiClient client)
         {
-            ViewerQuery result = await client.Query<ViewerQuery>(@"{ viewe { id email } }");
+            ViewerQuery result = await client.Query<ViewerQuery>(@"{ viewer { id email } }");
             Viewer viewer = result.Viewer;
 
             Console.WriteLine($"(From typed query) Viewer is {viewer.Id} with email {viewer.Email}");

@@ -19,7 +19,8 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "semantic-ui-react": "^0.86.0",
-    "store": "^2.0.12"
+    "store": "^2.0.12",
+    "isomorphic-fetch": "2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

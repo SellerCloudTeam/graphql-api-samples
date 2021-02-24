@@ -17,17 +17,17 @@ import { GraphiQLContainer } from "./GraphiQL";
 import { GRAPHQL_SERVER, GRAPHQL_ENDPOINT } from "../config";
 
 export const Site = () => {
-  if (!isLoggedIn()) {
-    return <Redirect to="/login" />;
-  }
-
   const { token, type } = getTokenFromStore();
   const client = useMemo(() =>
     new ApolloClient({
       uri: `${GRAPHQL_SERVER}${GRAPHQL_ENDPOINT}`,
       headers: { Authorization: `${type} ${token}` }
-    })
+    }), [type, token]
   );
+
+  if (!isLoggedIn()) {
+    return <Redirect to="/login" />;
+  }
 
   return (
     <ApolloProvider client={client}>

@@ -19,7 +19,7 @@
     "react-dom": "^16.8.6",
     "react-json-prettify": "^0.2.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "4.0.0",
     "semantic-ui-react": "^0.88.2",
     "store": "^2.0.12"
   },
